@@ -60,7 +60,7 @@ color: grey;
 .dropdown-content img{
     margin-left: 100px;
 }
-
+/* Home */ 
 .content {
     text-align: center;
     left: 50px;
@@ -86,6 +86,7 @@ color: grey;
      animation-delay: 1s;
      color: white;
 }
+/* about */ 
 .about {
      margin: 20% 20% 20% 10%;
 }
@@ -100,12 +101,18 @@ color: grey;
      animation-duration: 3s;
      animation-delay: 1s;
 }
-.me h1.about-me {
+.me h1.aboutMe{
+    font-size: 4em;
+    animation-duration: 2.5s;
+    animation-delay: 1s;
+}
+.me h2.about-me {
     font-size: 1.5em;
     animation-duration: 3s;
     animation-delay: 1s;
 
 }
+
 .rotating-box{
     width: 700px;
     height: 400px;
@@ -172,6 +179,72 @@ color: grey;
     display: none
     
 }
+/* Skills */ 
+.skills {
+    width: 25%;
+    position: relative;
+    float: right;
+    margin-right: 15%;
+    z-index: 1;
+    color: white;
+    overflow-x: hidden;
+    
+
+}
+.skills h2 {
+  font-size: 24px;
+  margin-bottom: 25px;
+}
+.skills ul {
+  padding-top: 50px;
+}
+
+.skills ul > li {
+  margin-bottom: 70px;
+  background: #000;
+  height: 5px;
+  border-radius: 3px;
+  border-left: 1px solid #111;
+  border-top: 1px solid #111;
+  border-right: 1px solid #333;
+  border-bottom: 1px solid #333;
+}
+.skills ul > li em {
+  font-family: 'Exo', sans-serif;
+  font-size: 18px;
+  position: relative;
+  top: -30px;
+}
+.skills ul > li span {
+  height: 1px;
+  margin: 2px 0;
+  background: #2187e7;
+  position: absolute;
+  box-shadow: 0px 0px 10px 1px rgba(0, 198, 255, 0.4);
+}
+.skills .html5 {
+  width: 70%;
+  animation: html5 2s ease-out;
+}
+.skills .css3 {
+  width: 90%;
+  animation: css3 2s ease-out;
+}
+.skills .jquery {
+  width: 50%;
+  animation: jquery 2s ease-out;
+}
+.skills .photoshop {
+  width: 60%;
+  animation: photoshop 2s ease-out;
+}
+.skills-exp{
+    position: relative;
+    z-index: 1;
+    color: white;
+    margin-left: 20%
+}
+/* rotating box */
 @media (max-width:768px)
 {
 .toggle {
@@ -193,4 +266,37 @@ nav.main {
 @keyframes rotate{
       0%{transform: rotateY(0)}
       100%{transform: rotateY(360deg);}
+}
+/* skills bar */
+@keyframes html5 {
+  0% {
+    width: 0px;
+  }
+  100% {
+    width: 70%;
+  }
+}
+@keyframes css3 {
+  0% {
+    width: 0px;
+  }
+  100% {
+    width: 90%;
+  }
+}
+@keyframes jquery {
+  0% {
+    width: 0px;
+  }
+  100% {
+    width: 50%;
+  }
+}
+@keyframes photoshop {
+  0% {
+    width: 0px;
+  }
+  100% {
+    width: 60%;
+  }
 }
