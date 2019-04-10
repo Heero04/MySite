@@ -25,13 +25,13 @@ nav.main  li a {
     text-decoration: none;
     display: block;
     text-align: center;
-    color: grey;
+    color:white;
     padding: 0px;
     margin-top: 220px;
     margin-bottom: -200px;
 }
 nav.main li:hover {
-    background: white;
+    background: #eb1b1b;
 }
 .responsiveLogo{
     width:auto;
@@ -118,6 +118,7 @@ color: grey;
     height: 400px;
     perspective: 800px;
     float: right;
+    margin-left: 20%
     
     
 }
@@ -181,15 +182,13 @@ color: grey;
 }
 /* Skills */ 
 .skills {
-    width: 25%;
+    width: 20%;
     position: relative;
     float: right;
     margin-right: 15%;
     z-index: 1;
     color: white;
     overflow-x: hidden;
-    
-
 }
 .skills h2 {
   font-size: 24px;
@@ -218,7 +217,7 @@ color: grey;
 .skills ul > li span {
   height: 1px;
   margin: 2px 0;
-  background: #2187e7;
+  background: #eb1b1b;
   position: absolute;
   box-shadow: 0px 0px 10px 1px rgba(0, 198, 255, 0.4);
 }
@@ -239,11 +238,51 @@ color: grey;
   animation: photoshop 2s ease-out;
 }
 .skills-exp{
+  width: 40%; 
     position: relative;
     z-index: 1;
     color: white;
-    margin-left: 20%
+    margin-right: 20%;
+    margin-left: 15%
 }
+/* projects */
+.projects {
+  height: 100%;
+  position: relative;
+  text-align: center;
+  z-index: 1;
+  display: grid;
+  grid-gap: 0.7rem;
+  grid-template-columns: repeat(3, 1fr);
+  top: -100px;
+  margin: 0 30% 5% 10%
+ 
+}
+.projects img {
+    width: 100%;
+    border: 3px #fff solid; }
+    .projects img:hover {
+      opacity: 0.5;
+      border-color: #eb1b1b;
+      transition: all 0.5s ease-out; }
+.btn, .btn-dark, .btn-light {
+  display: block;
+  padding: 0.5rem 1rem;
+  border: 0;
+  margin-bottom: 0.3rem; }
+  .btn:hover, .btn-dark:hover, .btn-light:hover {
+    background: #eb1b1b;
+    color: #000; }
+
+.btn-dark {
+  background: black;
+  color: #fff; }
+
+.btn-light {
+  background: gray;
+  color: black; }
+
+
 /* rotating box */
 @media (max-width:768px)
 {
@@ -263,6 +302,7 @@ nav.main {
 .show {
     display:block;
 }
+
 @keyframes rotate{
       0%{transform: rotateY(0)}
       100%{transform: rotateY(360deg);}
@@ -300,3 +340,4 @@ nav.main {
     width: 60%;
   }
 }
+/* projects * /
