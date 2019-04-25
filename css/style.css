@@ -120,7 +120,6 @@ color: grey;
     float: right;
     margin-left: 20%
     
-    
 }
 .single-rb{
     width: 400px;
@@ -281,10 +280,48 @@ color: grey;
 .btn-light {
   background: gray;
   color: black; }
+/* Contact */
+ .ContactMe {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+.ContactMe h1{
+  font-size: 4.5pc;
+}
+.contact-form {
+  position: relative;
+  left: 400px;
+  background-color: transparent;
+}
+form{
+  margin-top: 50px;
+  transition: all 4s ease-in-out;
+}
+.form-control{
+  position: relative;
+  width: 400px;
+  background: transparent;
+  border: none;
+  margin-bottom: 16px;
+  color: #fff;
+}
+.form-control[type=text] ,[type=email]:focus{
+  background-color: transparent;
+  border-color: inherit;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+.form-control[placeholder="Message"]:focus{
+  background-color: transparent;
+  border-color: inherit;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
 
 
 /* rotating box */
-@media (max-width:768px)
+@media (max-width:757px)
 {
 .toggle {
     position: relative;
@@ -298,10 +335,16 @@ nav.main {
     width: 100%;
     display: none;
 }
+.contact-form {
+  position: relative;
+  left: 100px;
+  background-color: transparent;
+}
 }
 .show {
     display:block;
 }
+
 
 @keyframes rotate{
       0%{transform: rotateY(0)}
@@ -340,4 +383,3 @@ nav.main {
     width: 60%;
   }
 }
-/* projects * /
