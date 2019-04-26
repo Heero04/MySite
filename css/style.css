@@ -244,6 +244,14 @@ color: grey;
     margin-right: 20%;
     margin-left: 15%
 }
+.skills-exp h1 {
+  animation-duration: 2s;
+  animation-delay: 1s;
+}
+.skills-exp p {
+  animation-duration: 2s;
+  animation-delay: 0s;
+}
 /* projects */
 .projects {
   height: 100%;
@@ -288,6 +296,8 @@ color: grey;
 }
 .ContactMe h1{
   font-size: 4.5pc;
+    animation-duration: 2s;
+  animation-delay: 0s;
 }
 .contact-form {
   position: relative;
