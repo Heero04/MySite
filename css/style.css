@@ -114,11 +114,13 @@ color: grey;
 }
 
 .rotating-box{
+    position: relative;
     width: 700px;
     height: 400px;
     perspective: 800px;
     float: right;
-    margin-left: 20%
+    margin-left: 20%;
+    left: 100px;
     
 }
 .single-rb{
@@ -344,6 +346,11 @@ nav.main {
     position: fixed;
     width: 100%;
     display: none;
+}
+.rotating-box{
+  position: relative;
+  left: 150px;
+  opacity: 0.4;
 }
 .contact-form {
   position: relative;
